@@ -17,5 +17,12 @@
     },
     "config": {
         "sort-packages": true
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "LaravelDeep\\LaravelScaffoldingPresets\\LaravelScaffoldingPresetsServiceProvider"
+       ]
+      }
     }
 }
