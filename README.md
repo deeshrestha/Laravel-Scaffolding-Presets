@@ -4,7 +4,7 @@ Laravel 5.5 Frontend CSS Framework and JS Framework Scaffolding Presets
 ## About The Package
 Laravel 5.5 comes with `artisan preset [preset name]` command to quickly scaffold your frontend application using one of your favorite CSS and JS frameworks. By default, it has a built in presets for Twitter Bootstrap, Vue.js, React and blank preset.
 
-I have tried to merge the Zurb Foundation preset but was denied during pull request. Currently Laravel won't add any more preset than it have right now due to the fact that it may bloat the core package. So I thought of unofficial way to integrate this. This package have all the core presets plus additional frameworks (currently Zurb Foundation). More will be added later.
+I have tried to merge the Zurb Foundation preset but was denied during pull request. Currently Laravel won't add any more preset than it have right now due to the fact that it may bloat the core package. So I thought of unofficial way to integrate this. This package have all the core presets plus additional frameworks. More will be added later.
 
 ## How to Use
 1. Download this package.
