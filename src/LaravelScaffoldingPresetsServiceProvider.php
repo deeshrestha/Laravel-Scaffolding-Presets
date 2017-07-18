@@ -16,14 +16,10 @@ class LaravelScaffoldingPresetsServiceProvider extends ServiceProvider
     {
         Preset::macro('bulma', function() {
           Bulma::install();
-          $this->info('Bulma scaffolding installed successfully.');
-          $this->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
         });
 
         Preset::macro('zurb', function() {
           Zurb::install();
-          $this->info('Zurb scaffolding installed successfully.');
-          $this->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
         });
     }
 
