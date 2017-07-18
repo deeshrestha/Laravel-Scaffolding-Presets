@@ -1,11 +1,12 @@
 <?php
 
-namespace Illuminate\Foundation\Console\Presets;
+namespace LaravelDeep\LaravelScaffoldingPresets\Zurb;
 
 use Illuminate\Support\Arr;
+use Illuminate\Foundation\Console\Presets\Preset;
 use Illuminate\Filesystem\Filesystem;
 
-class Foundation extends Preset
+class Zurb extends Preset
 {
     /**
      * Install the preset.
@@ -52,8 +53,8 @@ class Foundation extends Preset
             resource_path('assets/sass/initial-variables.sass')
         );
 
-        copy(__DIR__.'/foundation-stubs/_settings.scss', resource_path('assets/sass/_settings.scss'));
-        copy(__DIR__.'/foundation-stubs/app.scss', resource_path('assets/sass/app.scss'));
+        copy(__DIR__.'/zurb-stubs/_settings.scss', resource_path('assets/sass/_settings.scss'));
+        copy(__DIR__.'/zurb-stubs/app.scss', resource_path('assets/sass/app.scss'));
     }
 
     /**
@@ -67,6 +68,6 @@ class Foundation extends Preset
             resource_path('assets/js/bootstrap.js')
         );
 
-        copy(__DIR__.'/foundation-stubs/bootstrap.js', resource_path('assets/js/bootstrap.js'));
+        copy(__DIR__.'/zurb-stubs/bootstrap.js', resource_path('assets/js/bootstrap.js'));
     }
 }

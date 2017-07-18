@@ -1,0 +1,28 @@
+{
+    "name": "LaravelDeep/LaravelScaffoldingPresets",
+    "description": "Laravel 5.5 Frontend CSS Framework and JS Framwork Scaffolding Presets ",
+    "keywords": [
+        "laravel",
+        "presets"
+    ],
+    "homepage": "https://github.com/LaravelDeep/Laravel-Scaffolding-Presets",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.6"
+     },
+    "autoload": {
+        "psr-4": {
+            "LaravelDeep\\LaravelScaffoldingPresets\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "LaravelDeep\\LaravelScaffoldingPresets\\LaravelScaffoldingPresetsServiceProvider"
+       ]
+      }
+    }
+}
