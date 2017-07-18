@@ -1,11 +1,12 @@
 <?php
 
-namespace Illuminate\Foundation\Console\Presets;
+namespace LaravelDeep\LaravelScaffoldingPresets\Zurb;
 
 use Illuminate\Support\Arr;
+use Illuminate\Foundation\Console\Presets\Preset;
 use Illuminate\Filesystem\Filesystem;
 
-class Foundation extends Preset
+class Zurb extends Preset
 {
     /**
      * Install the preset.

@@ -1,9 +1,10 @@
 <?php
 
-namespace Illuminate\Foundation\Console\Presets;
+namespace LaravelDeep\LaravelScaffoldingPresets\Bulma;
 
 use Illuminate\Support\Arr;
 use Illuminate\Filesystem\Filesystem;
+use Illuminate\Foundation\Console\Presets\Preset;
 
 class Bulma extends Preset
 {
