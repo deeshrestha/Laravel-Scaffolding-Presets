@@ -14,7 +14,7 @@ I have tried to merge the Zurb Foundation preset but was denied during pull requ
 5. copy `vendor` folder from this package and overwrite all files on your fresh install.
 6. copy `resources` folder from this package and overwrite to replace default `welcome.blade.php` with this test welcoe page.
 7. Try again `php artisan --help preset`. Now you will see ` The preset type (none, bootstrap, vue, react, foundation, bulma)`.
-8. That's it! now do `npm install` then `npm run dev` then `php artisan serve` and point your browser to `http://127.0.0.1:8000/` to check preset.
+8. That's it! now do `php artisan bulma` then `npm install` then `npm run dev` then `php artisan serve` and point your browser to `http://127.0.0.1:8000/` to check preset.
 9. **NOTE**: This is unofficial way to use the preset, so use it on your own risk. However I have tested it thoroughly before adding it here. I have modified the core files for additional check and cleanup. More presets to come if I have helping hands.
 
 
