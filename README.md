@@ -12,9 +12,9 @@ I have tried to merge the Zurb Foundation preset but was denied during pull requ
 3. CD to `<your_app_name>` folder.
 4. try `php artisan --help preset`. You will see something like this ` The preset type (none, bootstrap, vue, react)`.
 5. copy `vendor` folder from this package and overwrite all files on your fresh install.
-6. Try again `php artisan --help preset`. Now you will see ` The preset type (none, bootstrap, vue, react, foundation)`.
-7. That's it. Now you can do something like this `php artisan preset foundation` and starting building your app using Zurb Foundation.
-8. Remember to include reference to public CSS and JS files on your layout or blade templates before testing.
+6. copy `resources` folder from this package and overwrite to replace default `welcome.blade.php` with this test welcoe page.
+7. Try again `php artisan --help preset`. Now you will see ` The preset type (none, bootstrap, vue, react, foundation, bulma)`.
+8. That's it! now do `npm install` then `npm run dev` then `php artisan serve` and point your browser to `http://127.0.0.1:8000/` to check preset.
 9. **NOTE**: This is unofficial way to use the preset, so use it on your own risk. However I have tested it thoroughly before adding it here. I have modified the core files for additional check and cleanup. More presets to come if I have helping hands.
 
 
@@ -24,10 +24,10 @@ I have tried to merge the Zurb Foundation preset but was denied during pull requ
 3. foundation - Zurb Foundation for sites SASS 6.4.1 & Jquery 2.2.4
 4. vue - Vue 2.1.10
 5. react - React 15.4.2
+6. bulma - Bulma 0.4.3
 
 ## How to Contribute
 
-### Method 1
 1. Fresh install Laravel
 2. Install your favorite framework and remove the unnecessary ones. This includes few `npm install` and edit `package.json` files manually. Take note of what is removed and what is added.
 3. Check if you need to copy some setting files to convenient location for frequent uses and include that on your main `app.scss` file. For example, `_variables.scss` (for bootstrap) or `_settings.scss` (for foundation) to `resource/scss`. This includes changing reference made by that file properly also because originally they are installed inside `node_modules/<package_name>`. For example, follow this tutorial http://somethingnewtutorial.blogspot.com/2017/07/using-foundation-6-with-laravel-5.html. Final modified and working file of this type is good candidate for storing inside `<preset_name>-stubs` folder.
@@ -36,9 +36,6 @@ I have tried to merge the Zurb Foundation preset but was denied during pull requ
 6. That's it.
 7. You can fork this repo, create a branch, add necessary files and do the pull request.
 
-### Method 2
-1. Describe the step by step process of how to install certain framework.
-2. I will try to replicate that and try to include it.
 
 Hope this helps
 Thanks!

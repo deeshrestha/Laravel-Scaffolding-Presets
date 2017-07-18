@@ -31,7 +31,7 @@ class Foundation extends Preset
         return [
             'foundation-sites' => '^6.4.1',
             'jquery' => '^2.2.4',
-        ] + Arr::except($packages, ['bootstrap-sass']);
+        ] + Arr::except($packages, ['bootstrap-sass', 'bulma']);
     }
 
     /**
@@ -41,8 +41,15 @@ class Foundation extends Preset
      */
     protected static function updateSass()
     {
+        // clean up the files used by other frameworks
         (new Filesystem)->delete(
             resource_path('assets/sass/_variables.scss')
+        );
+        (new Filesystem)->delete(
+            resource_path('assets/sass/bulma.sass')
+        );
+        (new Filesystem)->delete(
+            resource_path('assets/sass/initial-variables.sass')
         );
 
         copy(__DIR__.'/foundation-stubs/_settings.scss', resource_path('assets/sass/_settings.scss'));

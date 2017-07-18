@@ -15,7 +15,7 @@ class PresetCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'preset { type : The preset type (none, bootstrap, vue, react, foundation) }';
+    protected $signature = 'preset { type : The preset type (none, bootstrap, vue, react, foundation, bulma) }';
 
     /**
      * The console command description.
@@ -37,6 +37,7 @@ class PresetCommand extends Command
             'vue',
             'react',
             'foundation',
+            'bulma',
         ];
 
         if (static::hasMacro($this->argument('type'))) {
@@ -111,6 +112,18 @@ class PresetCommand extends Command
         Presets\Foundation::install();
 
         $this->info('Foundation scaffolding installed successfully.');
+        $this->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
+    }
+    /**
+     * Install the "bulma" preset.
+     *
+     * @return void
+     */
+    public function bulma()
+    {
+        Presets\Bulma::install();
+
+        $this->info('Bulma scaffolding installed successfully.');
         $this->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
     }
 }
